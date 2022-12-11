@@ -1,0 +1,130 @@
+body {
+    font-family: "roboto", sans-serif;
+}
+.banner {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.centered {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: white
+}
+
+.flexbox-header {
+    background-color: black;
+    margin: 0px
+}
+
+.company-name {
+    color: white;
+    font-size: 30px;
+    padding-right: 100px;
+}
+
+.flexbox-header {
+    display: flex;
+    flex-wrap:wrap;
+    padding-left: 70px;
+
+}
+
+.top-menu{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.nav-link{
+	padding: 30px;
+    justify-content: center;
+    color: white;
+}	
+
+.date{
+    margin: auto;
+    width:80%;
+    border: 3px solid #00000031;
+    border-width: thin;
+    text-align: left;
+    padding-left: 10px;
+    background: rgba(128, 128, 128, 0.126);
+    margin-top: 100px;
+    margin-bottom: 20px;
+
+}
+
+.flex-container{
+    display: flex;
+    align-content: center;
+    margin: auto;
+    width:60%;
+    display: flex;
+    flex-direction: column;}
+
+
+.show-title{
+    font-weight: bold;
+    font-size: larger;
+}
+.show-date{
+    font-weight: bolder;
+    font-size: smaller;}
+
+.grid-container{
+    display:grid;
+    gap:10px;
+    padding:10px;
+}
+.button {
+    background-color: rgb(255, 191, 42);
+    border:thin;
+    border-color: black;
+    color:white;
+    padding: 10px;
+}
+
+.theatre {grid-area:'img'}
+.show-title {grid-area: 'title'}
+.show-date{grid-area: 'date'}
+.show-location{ grid-area: 'location'}
+.button {grid-area:'button'}
+
+.grid-container{
+    display:grid;
+    grid-template-areas: 
+        'img img img title title button'
+        'img img img date date button'
+        'img img img location location button';
+    gap: 10px;
+    padding: 10px;
+}
+footer{
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: black;
+    color: white;
+}
+.chicago-map{
+    width:200%;
+    padding: 30px;
+
+}
+footer {
+    box-sizing:content-box;
+  }
+.column {
+    float: center;
+    width: 25%;
+    padding: 30px;
+    height: 250px;}
+
+.theatre{
+    width:150px;
+    padding: 10px;
+}
